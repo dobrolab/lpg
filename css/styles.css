@@ -1,0 +1,99 @@
+* {
+  transition: all 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-color: #fff;
+  color: #202020;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.font_akcent {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #1B72E5;
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+p {
+  line-height: 170%;
+}
+
+.text_akcent {
+  color: #1B72E5;
+}
+
+/* HEADER */
+header .navbar-brand img {
+  max-height: 80px;
+}
+header #lpgnavbar {
+  text-transform: uppercase;
+}
+header #lpgnavbar .navbar-nav {
+  font-size: 18px;
+}
+header .navbar-nav .nav-link {
+  font-family: "Montserrat", sans-serif;
+}
+header .header_contacts {
+  text-align: center;
+}
+header .header_contacts a {
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+header .header_contacts button.btn {
+  background-color: #1B72E5;
+  padding: 10px 35px;
+  border-radius: 50px;
+}
+
+/* BLANK ADAPTIVE */
+/* // XXL */
+/* // XL */
+/* // LG */
+/* // MD */
+/* // SM */
+/* // XS */
+/* HEADER: end */
+/* PROMO */
+.promo_wrapper {
+  background: transparent url("../img/promo_bg.jpg") no-repeat scroll top center/cover;
+}
+
+/* BLANK ADAPTIVE */
+/* // XXL */
+/* // XL */
+/* // LG */
+/* // MD */
+/* // SM */
+/* // XS */
+/* PROMO: end */
+/* FOOTER */
+/* BLANK ADAPTIVE */
+/* // XXL */
+/* // XL */
+/* // LG */
+/* // MD */
+/* // SM */
+/* // XS */
+/* FOOTER: end *//*# sourceMappingURL=styles.css.map */
