@@ -76,6 +76,7 @@ header .header_contacts {
 }
 header .header_contacts a {
   font-weight: bold;
+  font-family: "Montserrat", sans-serif;
   font-size: 22px;
   text-decoration: none;
 }
