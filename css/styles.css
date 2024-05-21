@@ -86,6 +86,11 @@ header .header_contacts a {
 /* // XL */
 /* // LG */
 /* // MD */
+@media (max-width: 991px) {
+  header .navbar-brand img {
+    max-height: 60px;
+  }
+}
 /* // SM */
 /* // XS */
 /* HEADER: end */
