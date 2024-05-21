@@ -8,7 +8,7 @@ html {
 
 body {
   background-color: #fff;
-  color: #202020;
+  color: #777777;
   font-size: 20px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -32,6 +32,13 @@ h2 {
   color: #1B72E5;
   font-size: 40px;
   margin-bottom: 60px;
+}
+
+h3 {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #202020;
+  text-transform: uppercase;
 }
 
 .btn {
@@ -147,6 +154,26 @@ header .header_contacts a {
 /* proponuemo */
 #proponuemo h2 {
   color: #202020;
+}
+#proponuemo .proponuemo_item h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #1B72E5;
+}
+#proponuemo .proponuemo_item p {
+  margin-bottom: 20px;
+}
+#proponuemo .proponuemo_item .img-fluid {
+  border-radius: 30px;
+}
+#proponuemo .proponuemo_item .btn {
+  margin-bottom: 20px;
+}
+#proponuemo .proponuemo_item hr {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-color: #1B72E5;
 }
 
 /* proponuemo ADAPTIVE */
