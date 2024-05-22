@@ -108,8 +108,13 @@ header .header_contacts a {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
+#promo .promo_text b {
+  color: #f00;
+}
 #promo .promo_text .h1 {
   font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 #promo .promo_text .h1 span {
   text-transform: uppercase;
@@ -118,6 +123,7 @@ header .header_contacts a {
   text-transform: lowercase;
   font-weight: 400;
   color: #777777;
+  margin-bottom: 40px;
 }
 
 /* BLANK ADAPTIVE */
