@@ -1,6 +1,7 @@
 $c0: #777777
 $c1: #1B72E5
 $c2: #3990FF
+$c5: #FF543E
 $c9: #202020
 
 $f0: "Inter", sans-serif
@@ -15,7 +16,7 @@ html
 body
 	background-color: #fff
 	color: $c9
-	font-size: 20px
+	font-size: 18px
 	font-family: $f0
 	font-weight: 400
 
@@ -28,15 +29,17 @@ body
 	font-weight: 700
 	font-style: normal
 
-h2
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 	font-family: $f1
 	font-weight: 700
 	text-transform: uppercase
+
+h2, .h2
 	color: $c1
 	font-size: 40px
 	margin-bottom: 60px
 
-h3
+h3, .h3
 	font-weight: 700
 	font-family: $f1
 	color: $c9
@@ -57,10 +60,26 @@ p
 .text_akcent
 	color: $c1
 
+.list_styled
+	list-style: none
+	line-height: 150%
+	padding-left: 0
+	li
+		padding-left: 45px
+		background: transparent url('/img/icon_check.svg') no-repeat scroll top 5px left
+		padding-bottom: 15px
+		color: $c0
+
+.socials
+	a
+		display: inline-block
+		margin-right: 10px
 
 @import _header
 @import _promo
 @import _services
 @import _proponuemo
+@import _choose
+@import _orderform
 @import _footer
 

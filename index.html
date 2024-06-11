@@ -25,7 +25,7 @@
 	<div class="promo_wrapper">
 
 		<!-- header -->
-		<header>
+		<header class="">
 			<div class="container">
 				<nav class="navbar navbar-expand-lg">
 					<div class="container-fluid">
@@ -86,6 +86,8 @@
 
 			</div>
 		</section> <!-- / promo -->
+
+	</div>
 
 		<!-- services -->
 		<section id="services" class="section">
@@ -195,14 +197,213 @@
 							<a href="" class="btn btn-primary">Замовити</a>
 						</div>
 					</div>
-					<hr>
 				</div>
 					
 			</div>
 		</section> <!-- / proponuemo -->
-		
 
-	</div>
+		<!-- choose -->
+		<section id="choose" class="section">
+			<div class="container">
+				<h2 class="text-center">Нас обирають тому що</h2>
+
+				<div class="row g-4">
+
+					<div class="col-lg-6">
+						<div class="row">
+							<div class="col-3">
+								<img src="img/choose_icon_01.svg" alt="" class="img-fluid">
+							</div>
+							<div class="col-8 mb-4">
+								<div class="h3">Ми гарантуємо</div>
+								<p>Безперебійну роботу обладнання та індивідуальний підхід до кожного клієнта, щоб забезпечити максимально ефективне використання газу і економію коштів</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="row">
+							<div class="col-3">
+								<img src="img/choose_icon_02.svg" alt="" class="img-fluid">
+							</div>
+							<div class="col-8 mb-4">
+								<div class="h3">Інновації та розвиток</div>
+								<p>Ми постійно прагнемо до розвитку та застосування новітніх технологій та інновацій у галузі енергетики. Ми активно досліджуємо та впроваджуємо передові методи та рішення, щоб забезпечити ефективне використання пропану-бутану</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="row">
+							<div class="col-3">
+								<img src="img/choose_icon_03.svg" alt="" class="img-fluid">
+							</div>
+							<div class="col-8 mb-4">
+								<div class="h3">Енергетична безпека</div>
+								<p>Надаємо якісне обслуговування, надійнсість та високі технічні характеристики свого обладнання. Ми прагнемо створити надійну структуру енергопостачання та роботи зрідженого газу, щоб гарантувати стабільність енергетичної системи та захистити віж можливих криз у сфері енергетики</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="row">
+							<div class="col-3">
+								<img src="img/choose_icon_04.svg" alt="" class="img-fluid">
+							</div>
+							<div class="col-8 mb-4">
+								<div class="h3">Обслуговування</div>
+								<p>Надаємо якісне обслуговування, надійнсість та високі технічні характеристики свого обладнання.</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+		</section> <!-- / choose -->
+
+		<!-- askus -->
+		<section id="orderform" class="section">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-6">
+						<div class="askus_text">
+							<h2>Ми вам допоможемо</h2>
+							<div class="subtitle">у наступних питаннях:</div>
+
+							<ul class="list_styled">
+								<li>За проектом Вашої САГ/АГЗП/АЗС</li>
+								<li>Розрахуємо вартість будівництва під ключ</li>
+								<li>Узгодимо дату та час виїзду нашого спеціаліста в зручний для Вас час</li>
+								<li>Надішлемо комерційну пропозицію на вашу електронну адресу</li>
+							</ul>
+
+							<div class="persona">
+								<div class="persona_photo">
+									<img src="/img/boss.png" alt="">
+								</div>
+								<div class="persona_name">
+									<div class="h4">Сергій Жушман</div>
+									<p>засновник підприємства</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="orderform">
+							<h2>Залишити заявку</h2>
+							<p>Наш спеціаліст перетелефонує вам та погодить з вами усі нюанси, питання, що вас цікавлять, і зробить точну оцінку витрат <strong>БЕЗКОШТОВНО</strong></p>
+
+							<form action="[[~[[*id]]]]" method="post" class="form-horizontal" id="dlvoprosform">
+								<div class="d-none hidden">
+									<input type="hidden" name="dladdress" value="[[#SERVER.REMOTE_ADDR]]" />
+									<input type="text" name="name" class="form-input name" value="Ваше ім’я">
+									<!-- [[-<input type="hidden" name="[[+submitVar]]" value="1">]] -->
+								</div>
+
+								<div class="form-group">
+									<div class="col-lg-12">
+										<input name="dlname" value="" class="form-control" placeholder="Ваше ім’я">
+										<!-- [[+fi.dlname]] <small class="text-danger" data-error="dlname">[[+fi.error.dlname]]</small>  -->
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-lg-12">
+										<input type="text" inputmode="tel" name="dlphone" value="" class="form-control" placeholder="Ваш телефон *">
+										<!-- [[+fi.dlphone]] <small class="text-danger" data-error="dlphone">[[+fi.error.dlphone]]</small>  -->
+									</div>
+								</div>
+								<p class="text-muted "><i class="fa fa-clock-o"></i> натискаючи на кнопку «Залишити заявку», ви погоджуєтесь з політикою конфіденційності</p>
+								<button type="submit" name="dlcallback" class="btn btn-lg btn-order mb-small" >Відправити</button>
+
+							</form>
+
+							<hr class="my-3 border-white">
+
+							<p>Або напишіть нам будь-яким зручним для вас способом:</p>
+							<div class="socials">
+								<a href="https://wa.me/+380681773737" target="_blank"><img src="/img/icon_wa.svg" alt=""></a>
+								<a href="viber://chat?number=+380681773737" target="_blank"><img src="/img/icon_vb.svg" alt=""></a>
+								<a href="https://www.facebook.com/profile.php?id=61557995950448" target="_blank"><img src="/img/icon_fb.svg" alt=""></a>
+								<a href="https://www.instagram.com/lpgterm/" target="_blank"><img src="/img/icon_ig.svg" alt=""></a>
+								<a href="" target="_blank"><img src="/img/icon_yt.svg" alt=""></a>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section> <!-- / askus -->
+
+		<footer class="">
+			<div class="container">
+
+				<div class="row g-4">
+
+					<div class="col-lg-3">
+						<img src="/img/logo.png" alt="" class="img-fluid mb-4" width="280">
+						<p class="small">Заправка під ключ для власних потреб </p>
+					</div>
+
+					<div class="col-lg-2">
+						<ul class="nav flex-column list-unstyled">
+							<li class="nav-item"><a class="nav-link" href="">Послуги</a></li>
+							<li class="nav-item"><a class="nav-link" href="">Про нас</a></li>
+							<li class="nav-item"><a class="nav-link" href="">Обладнання</a></li>
+							<li class="nav-item"><a class="nav-link" href="">Контакти</a></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="footer_address">
+							<div class="h4">Головний офіс</div>
+							<p>
+								04210, м. Київ,<br>
+								пр. Героїв Сталінграда, 20 Б
+							</p>
+						</div>
+						<div class="footer_address">
+							<div class="h4">Філія</div>
+							<p>
+								52204, м. Жовті Води,<br>
+								вул. Івана Богуна, 6, оф. 6
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-3 text-lg-end">
+						<a class="footer_phone" href="tel:+380681773737">+380 68 177 37 37</a>
+						<br>
+						<a class="footer_email" href="mailto:lpg-term@ukr.net">lpg-term@ukr.net</a>
+						<p class="footer_rozklad">телефонуйте ПН-ПТ з 9:00 до 18:00</p>
+						<div class="socials">
+							<a href="https://wa.me/+380681773737" target="_blank"><img src="/img/icon_wa.svg" alt=""></a>
+							<a href="viber://chat?number=+380681773737" target="_blank"><img src="/img/icon_vb.svg" alt=""></a>
+							<a href="https://www.facebook.com/profile.php?id=61557995950448" target="_blank"><img src="/img/icon_fb.svg" alt=""></a>
+							<a href="https://www.instagram.com/lpgterm/" target="_blank"><img src="/img/icon_ig.svg" alt=""></a>
+							<a href="" target="_blank"><img src="/img/icon_yt.svg" alt=""></a>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="bottom_bar">
+					<div class="row">
+						<div class="col-lg-6">
+							© 2024 ТОВ «ЛПГ ТЕРМ». Всі права захищені
+						</div>
+						<div class="col-lg-6 text-lg-end">
+							Зроблено у <a href="">DobroLab</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</footer>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/fancybox.js"></script>

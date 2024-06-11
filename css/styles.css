@@ -9,7 +9,7 @@ html {
 body {
   background-color: #fff;
   color: #202020;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
@@ -25,16 +25,19 @@ body {
   font-style: normal;
 }
 
-h2 {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+h2, .h2 {
   color: #1B72E5;
   font-size: 40px;
   margin-bottom: 60px;
 }
 
-h3 {
+h3, .h3 {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   color: #202020;
@@ -56,6 +59,23 @@ p {
 
 .text_akcent {
   color: #1B72E5;
+}
+
+.list_styled {
+  list-style: none;
+  line-height: 150%;
+  padding-left: 0;
+}
+.list_styled li {
+  padding-left: 45px;
+  background: transparent url("/img/icon_check.svg") no-repeat scroll top 5px left;
+  padding-bottom: 15px;
+  color: #777777;
+}
+
+.socials a {
+  display: inline-block;
+  margin-right: 10px;
 }
 
 /* HEADER */
@@ -165,6 +185,9 @@ header .header_contacts a {
 /* // XS */
 /* services: end */
 /* proponuemo */
+#proponuemo {
+  background: #fff url("/img/proponuemo_bg.svg") no-repeat scroll center bottom/cover;
+}
 #proponuemo h2 {
   color: #202020;
 }
@@ -197,7 +220,141 @@ header .header_contacts a {
 /* // SM */
 /* // XS */
 /* proponuemo: end */
+/* choose */
+#choose {
+  background: #3990FF url("/img/choose_bg.svg") no-repeat scroll center center/cover;
+  color: #fff;
+}
+#choose h2, #choose .h3, #choose p {
+  color: #fff;
+}
+#choose .h3 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+#choose p {
+  color: #ddd;
+}
+
+/* choose ADAPTIVE */
+/* // XXL */
+/* // XL */
+/* // LG */
+/* // MD */
+/* // SM */
+/* // XS */
+/* choose: end */
+/* orderform */
+#orderform {
+  background-image: url("data:image/svg+xml,%3Csvg fill='none' height='979' viewBox='0 0 1920 979' width='1920' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cfilter id='a' color-interpolation-filters='sRGB' filterUnits='userSpaceOnUse' height='1204' width='1341' x='-742' y='225'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend in='SourceGraphic' in2='BackgroundImageFix' mode='normal' result='shape'/%3E%3CfeGaussianBlur result='effect1_foregroundBlur_1891_108' stdDeviation='200'/%3E%3C/filter%3E%3CclipPath id='b'%3E%3Cpath d='m0 0h1920v979h-1920z'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23b)'%3E%3Cpath d='m0 0h1920v979h-1920z' fill='%23fff'/%3E%3Cg filter='url(%23a)' opacity='.3'%3E%3Cellipse cx='-71.5' cy='827' fill='%231b72e5' rx='270.5' ry='202'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: left bottom;
+}
+#orderform h2 {
+  margin-bottom: 20px;
+}
+#orderform .askus_text {
+  padding: 60px 0;
+}
+#orderform .askus_text .subtitle {
+  margin-bottom: 50px;
+}
+#orderform .persona {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+#orderform .persona .persona_photo {
+  max-width: 100%;
+}
+#orderform .persona .persona_name {
+  align-self: center;
+}
+#orderform .persona .persona_name .h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+#orderform .orderform {
+  border-radius: 30px;
+  padding: 60px 80px;
+  background: #3990FF url("/img/orderform_bg.svg") no-repeat scroll right bottom/contain;
+}
+#orderform .orderform h2, #orderform .orderform p {
+  color: white;
+}
+#orderform .orderform p {
+  margin-bottom: 40px;
+}
+#orderform .orderform .form-group {
+  margin-bottom: 30px;
+}
+#orderform .orderform .form-group input {
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+#orderform .orderform .form-group input::-moz-placeholder {
+  color: #D2D2D2;
+}
+#orderform .orderform .form-group input::placeholder {
+  color: #D2D2D2;
+}
+#orderform .orderform .btn-order {
+  background-color: #FF543E;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  width: 50%;
+  margin-bottom: 30px;
+}
+#orderform .orderform .text-muted {
+  color: #ccc !important;
+  font-size: 14px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+/* orderform ADAPTIVE */
+/* // XXL */
+/* // XL */
+/* // LG */
+/* // MD */
+/* // SM */
+/* // XS */
+/* orderform: end */
 /* FOOTER */
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #DEEBFB;
+}
+footer .footer_address {
+  margin-bottom: 40px;
+}
+footer a {
+  text-decoration: none;
+  color: #202020;
+}
+footer .footer_phone {
+  font-size: 30px;
+  color: #1B72E5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+footer .footer_rozklad {
+  margin-top: 20px;
+  font-size: 14px;
+}
+footer .bottom_bar {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #3990FF;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
 /* BLANK ADAPTIVE */
 /* // XXL */
 /* // XL */
