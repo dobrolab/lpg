@@ -192,11 +192,13 @@ header .header_contacts .header_contacts_callback {
 /* // XS */
 /* services: end */
 /* gallery */
-#gallery .swiper-pagination-bullet-active {
-  background-color: #fff !important;
-}
 #gallery .swiper-pagination-bullet {
-  background-color: #1B72E5 !important;
+  box-shadow: 0 0 20px #555;
+  opacity: 1;
+  background-color: #1B72E5;
+}
+#gallery .swiper-pagination-bullet-active {
+  background-color: #fff;
 }
 #gallery .swiper-slide img {
   filter: brightness(1);
