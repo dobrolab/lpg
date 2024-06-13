@@ -186,7 +186,7 @@ header .header_contacts a {
 /* services: end */
 /* proponuemo */
 #proponuemo {
-  background: #fff url("/img/proponuemo_bg.svg") no-repeat scroll center bottom/cover;
+  background: #fff url("../img/proponuemo_bg.svg") no-repeat scroll center bottom/cover;
 }
 #proponuemo h2 {
   color: #202020;
