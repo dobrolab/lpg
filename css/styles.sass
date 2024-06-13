@@ -52,10 +52,13 @@ h3, .h3
 	position: relative
 	font-family: $f1
 
-
 p
 	color: $c0
 	line-height: 170%
+
+a:hover
+	cursor: pointer
+	filter: contrast(1.75) brightness(0.9)
 
 .text_akcent
 	color: $c1
@@ -66,7 +69,7 @@ p
 	padding-left: 0
 	li
 		padding-left: 45px
-		background: transparent url('/img/icon_check.svg') no-repeat scroll top 5px left
+		background: transparent url('/img/icon_check.svg') no-repeat scroll top 0px left
 		padding-bottom: 15px
 		color: $c0
 
@@ -78,8 +81,10 @@ p
 @import _header
 @import _promo
 @import _services
+@import _gallery
 @import _proponuemo
 @import _choose
+@import _about
 @import _orderform
 @import _footer
 

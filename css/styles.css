@@ -57,6 +57,11 @@ p {
   line-height: 170%;
 }
 
+a:hover {
+  cursor: pointer;
+  filter: contrast(1.75) brightness(0.9);
+}
+
 .text_akcent {
   color: #1B72E5;
 }
@@ -68,7 +73,7 @@ p {
 }
 .list_styled li {
   padding-left: 45px;
-  background: transparent url("/img/icon_check.svg") no-repeat scroll top 5px left;
+  background: transparent url("/img/icon_check.svg") no-repeat scroll top 0px left;
   padding-bottom: 15px;
   color: #777777;
 }
@@ -94,11 +99,14 @@ header .navbar-nav .nav-link {
 header .header_contacts {
   text-align: center;
 }
-header .header_contacts a {
+header .header_contacts .header_contacts_phone {
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   text-decoration: none;
+}
+header .header_contacts .header_contacts_callback {
+  text-transform: lowercase;
 }
 
 /* BLANK ADAPTIVE */
@@ -120,9 +128,8 @@ header .header_contacts a {
 }
 
 #promo {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background: transparent url("../img/head_bg.jpg") no-repeat scroll center center/cover;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 #promo .promo_text {
   font-family: "Montserrat", sans-serif;
@@ -184,6 +191,28 @@ header .header_contacts a {
 /* // SM */
 /* // XS */
 /* services: end */
+/* gallery */
+#gallery .swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+#gallery .swiper-pagination-bullet {
+  background-color: #1B72E5 !important;
+}
+#gallery .swiper-slide img {
+  filter: brightness(1);
+}
+#gallery .swiper-slide img:hover {
+  filter: brightness(1.1);
+}
+
+/* gallery ADAPTIVE */
+/* // XXL */
+/* // XL */
+/* // LG */
+/* // MD */
+/* // SM */
+/* // XS */
+/* gallery: end */
 /* proponuemo */
 #proponuemo {
   background: #fff url("../img/proponuemo_bg.svg") no-repeat scroll center bottom/cover;
@@ -246,6 +275,19 @@ header .header_contacts a {
 /* // SM */
 /* // XS */
 /* choose: end */
+/* about */
+#about {
+  background-color: #deebfb;
+}
+
+/* about ADAPTIVE */
+/* // XXL */
+/* // XL */
+/* // LG */
+/* // MD */
+/* // SM */
+/* // XS */
+/* about: end */
 /* orderform */
 #orderform {
   background-image: url("data:image/svg+xml,%3Csvg fill='none' height='979' viewBox='0 0 1920 979' width='1920' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cfilter id='a' color-interpolation-filters='sRGB' filterUnits='userSpaceOnUse' height='1204' width='1341' x='-742' y='225'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend in='SourceGraphic' in2='BackgroundImageFix' mode='normal' result='shape'/%3E%3CfeGaussianBlur result='effect1_foregroundBlur_1891_108' stdDeviation='200'/%3E%3C/filter%3E%3CclipPath id='b'%3E%3Cpath d='m0 0h1920v979h-1920z'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23b)'%3E%3Cpath d='m0 0h1920v979h-1920z' fill='%23fff'/%3E%3Cg filter='url(%23a)' opacity='.3'%3E%3Cellipse cx='-71.5' cy='827' fill='%231b72e5' rx='270.5' ry='202'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -294,6 +336,7 @@ header .header_contacts a {
   padding: 15px 20px;
   border-radius: 50px;
   font-size: 20px;
+  border: 0px;
 }
 #orderform .orderform .form-group input::-moz-placeholder {
   color: #D2D2D2;
