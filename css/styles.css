@@ -94,6 +94,13 @@ a:hover {
   border: 1px solid #1B72E5;
 }
 
+#pagetitle {
+  padding-bottom: 60px;
+}
+#pagetitle .subtitle {
+  color: #1B72E5;
+}
+
 /* // MD */
 @media (max-width: 991px) {
   body {
